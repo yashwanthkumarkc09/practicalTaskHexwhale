@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+#main-content {
+    margin-left: 180px;
+
+}
+
+.navtop{
+    height:40px;
+}
+#sidebar{
+    margin-top: 40px;
+}
+.wrapper {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+html, body { height: 100%; }
+body { margin: 0;}
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+    position: relative;
+    height: inherit;
+    font-family: 'Times New Roman', Times, serif;
+}

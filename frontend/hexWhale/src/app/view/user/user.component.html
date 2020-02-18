@@ -1,0 +1,26 @@
+<section id="main-content">
+  <section class="wrapper">
+    <div class="container col-md-6">
+      <div class="text-center">
+        <img src='../../../assets/image/img.png' class="rounded-circle text-center" alt="Cinque Terre" height="150px">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputName1">Name</label>
+        <input type="text" [(ngModel)]="userInfo.name" class="form-control" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" [(ngModel)]="userInfo.email" readonly class="form-control" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Mobile Number</label>
+        <input type="text" [(ngModel)]="userInfo.mobile" class="form-control" placeholder="Mobile" maxlength="10">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">City</label>
+        <input type="text" [(ngModel)]="userInfo.city" class="form-control" placeholder="City">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="updateUserInfo(userInfo)">Update</button>&nbsp;&nbsp;
+    </div>
+  </section>
+</section>

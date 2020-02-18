@@ -1,0 +1,39 @@
+<nav class="navbar border bg-info fixed-top shadow navtop">
+  <div class="text-center" style="color: white;">
+    <h4><strong>
+        <span style="color:black">h</span>EX
+        <span style="color:black">w</span>HALE</strong></h4>
+  </div>
+</nav>
+<!-- sidebar start -->
+<aside>
+  <div id="sidebar" class="border bg-light sidebar shadow">
+    <!-- sidebar menu start -->
+    <ul class="sub-menu">
+      <li class="">
+        <a class="" [routerLink]="" routerLinkActive="class-name" routerLinkActiveOptions="{exact:true}">
+
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+          <span>Home</span>
+        </a>
+      </li>
+      <li style="color: green;">
+        <i class="fa fa-list-alt" aria-hidden="true" (click)="hide()"></i>&nbsp;
+        <a (click)="getCategory($event)">Category</a>
+        <ng-material-multilevel-menu [configuration]='config' [items]='appitems' (selectedItem)="selectedItem($event)"
+          (selectedLabel)="selectedLabel($event)">
+        </ng-material-multilevel-menu>
+      </li>
+      <li class="sub-menu">
+        <a class="" [routerLink]="['']" routerLinkActive="class-name" (clcik)="clearSession()" routerLinkActiveOptions="{exact:true}">
+          <i class="fas fa-archive" aria-hidden="true"></i>&nbsp;
+          <span>Logout</span>
+          <span class="menu-arrow arrow_carrot-right"></span>
+        </a>
+      </li>
+    </ul>
+    <!-- sidebar menu end -->
+  </div>
+</aside>
+<!-- sidebar end -->
+<router-outlet></router-outlet>

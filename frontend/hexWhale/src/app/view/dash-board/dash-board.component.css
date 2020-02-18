@@ -1,0 +1,41 @@
+.navbar{
+    font: 20px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+#sidebar {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+}
+
+.sub-menu{
+    line-height: 55px;
+    font-size: 16px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+li:hover{
+    color:blue;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+    
+}
+a{
+   text-decoration:none
+}
+.top-nav{
+
+    float: right;
+
+    right: 0;
+
+    left: auto;
+
+}
+.class-name{
+    color:green;
+
+}
+
